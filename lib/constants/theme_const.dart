@@ -1,6 +1,15 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ThemeService {
-  static final ThemeData lightTheme = ThemeData();
-  static final ThemeData darkTheme = ThemeData();
+  static CupertinoThemeData lightTheme = CupertinoThemeData(
+      textTheme: CupertinoTextThemeData(
+          textStyle: TextStyle(
+              color: CupertinoColors.black,
+              fontFamily: GoogleFonts.robotoFlex().fontFamily)));
+  static CupertinoThemeData darkTheme = CupertinoThemeData(
+      textTheme: CupertinoTextThemeData(
+          textStyle: TextStyle(
+              color: CupertinoColors.white,
+              fontFamily: GoogleFonts.robotoFlex().fontFamily)));
 }

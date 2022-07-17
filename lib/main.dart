@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:freelancing_world/constants/theme_const.dart';
-
-import 'screens/home/home_screen.dart';
+import 'package:freelancing_world/screens/onboarding/onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return CupertinoApp(
       title: 'Freelancing World',
       debugShowCheckedModeBanner: false,
       theme: ThemeService.lightTheme,
-      home: const HomeScreen(),
+      home: const OnboardingScreen(),
     );
   }
 }
